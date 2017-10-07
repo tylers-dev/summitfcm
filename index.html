@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>One Page Wonder - Start Bootstrap Template</title>
+    <title>Summit Financial Coaching</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -18,30 +18,30 @@
 
   </head>
 
-  <body>
+  <body id="home">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <a class="navbar-brand" href="#">Summit Financial Coaching</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" href="#home">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#service">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -51,23 +51,22 @@
     <header class="masthead">
       <div class="overlay">
         <div class="container">
-          <h1 class="display-1 text-white">One Page Wonder</h1>
-          <h2 class="display-4 text-white">Will Rock Your Socks Off</h2>
+          <h1 class="display-4 text-white">Learn how to become <span style="white-space:nowrap">debt free</span></h1>
         </div>
       </div>
     </header>
 
     <section>
-      <div class="container">
+      <div class="container" id="about">
         <div class="row align-items-center">
-          <div class="col-md-6 order-2">
-            <div class="p-5">
-              <img class="img-fluid rounded-circle" src="https://unsplash.it/500/500?image=836" alt="">
+          <div class="col-md-6 order-sm-2">
+            <div class="p-3 p-sm-5">
+              <img class="img-fluid rounded-circle" src="http://www.kellycameron.net/wp-content/uploads/2015/07/KellyJuly15Circle.png" alt="">
             </div>
           </div>
-          <div class="col-md-6 order-1">
-            <div class="p-5">
-              <h2 class="display-4">For those about to rock...</h2>
+          <div class="col-md-6 order-sm-1">
+            <div class="p-3 p-sm-5">
+              <h2 class="display-6">Who am I?...</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
             </div>
           </div>
@@ -76,16 +75,16 @@
     </section>
 
     <section>
-      <div class="container">
+      <div class="container" id="service">
         <div class="row align-items-center">
           <div class="col-md-6">
-            <div class="p-5">
-              <img class="img-fluid rounded-circle" src="https://unsplash.it/500/500?image=452" alt="">
+            <div class="p-3 p-sm-5">
+              <img class="img-fluid rounded-circle" src="images/services.gif" alt="">
             </div>
           </div>
           <div class="col-md-6">
-            <div class="p-5">
-              <h2 class="display-4">We salute you!</h2>
+            <div class="p-3 p-sm-5">
+              <h2 class="display-6">Service</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
             </div>
           </div>
@@ -94,17 +93,28 @@
     </section>
 
     <section>
-      <div class="container">
+      <div class="container" id="contact">
         <div class="row align-items-center">
-          <div class="col-md-6 order-2">
-            <div class="p-5">
-              <img class="img-fluid rounded-circle" src="https://unsplash.it/500/500?image=453" alt="">
-            </div>
-          </div>
-          <div class="col-md-6 order-1">
-            <div class="p-5">
-              <h2 class="display-4">Let there be rock!</h2>
+          <div class="col-sm-8 mx-auto order-2">
+            <div class="p-3 p-sm-5">
+              <h2 class="display-6 text-center">Contact</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+              <form role="form">
+          				<div class="form-group">
+        						<input type="text" class="form-control" id="name" name="name" placeholder="Name" required="">
+        					</div>
+        					<div class="form-group">
+        						<input type="text" class="form-control" id="email" name="email" placeholder="Email" required="">
+        					</div>
+        					<div class="form-group">
+        						<input type="text" class="form-control" id="mobile" name="mobile" placeholder="Phone" required="">
+        					</div>
+                  <div class="form-group">
+                      <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
+                      <span class="help-block"><p id="characterLeft" class="help-block ">140 characters left</p></span>
+                  </div>
+                <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
+              </form>
             </div>
           </div>
         </div>
@@ -123,6 +133,46 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        // Select all links with hashes
+        $('a[href*="#"]')
+          // Remove links that don't actually link to anything
+          .not('[href="#"]')
+          .not('[href="#0"]')
+          .click(function(event) {
+            // On-page links
+            if (
+              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+              &&
+              location.hostname == this.hostname
+            ) {
+              // Figure out element to scroll to
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              // Does a scroll target exist?
+              if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 500, function() {
+                  // Callback after animation
+                  // Must change focus!
+                  var $target = $(target);
+                  $target.focus();
+                  if ($target.is(":focus")) { // Checking if the target was focused
+                    return false;
+                  } else {
+                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                    $target.focus(); // Set focus again
+                  };
+                });
+              }
+            }
+          });
+      })
+    </script>
 
   </body>
 

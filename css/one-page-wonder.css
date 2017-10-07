@@ -15,7 +15,7 @@ body {
 }
 
 header.masthead {
-  background: url('https://unsplash.it/1900/1080?image=304') no-repeat center center scroll;
+  background: url('../images/photo_bg_mountains.jpg') no-repeat left top 30% scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -32,4 +32,8 @@ header.masthead>.overlay {
   header.masthead>.overlay {
     padding: 10rem 0;
   }
+}
+
+img{
+    width:130%
 }
